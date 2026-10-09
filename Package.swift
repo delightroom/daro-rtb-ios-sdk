@@ -5,7 +5,7 @@ let package = Package(
     platforms: [.iOS(.v13)],
     products: [.library(name: "DaroBid", targets: ["DaroBid", "PrebidMobile"])],
     targets: [
-        .binaryTarget(name: "DaroBid", url: "https://github.com/delightroom/daro-rtb-ios-sdk/releases/download/26.10.100/DaroBid-26.10.100.zip", checksum: "6db05970ad58173b6b7bf2ac4c2b5574ce21c81e07919b4f7d54cf8138931c49"),
+        .binaryTarget(name: "DaroBid", url: "https://github.com/delightroom/daro-rtb-ios-sdk/releases/download/26.10.900-rc.1/DaroBid-26.10.900-rc.1.zip", checksum: "6caa522207a3cc38f86c6ff376461feffe334b24d1c4e1b5d682ea6085b95bf7"),
         .target(name: "PrebidMobile", path: "Sources/PrebidMobile", resources: [.process("Resources/PrivacyInfo.xcprivacy"), .process("Resources/mraid.js"), .process("Resources/omsdk.js"), .copy("Resources/DaroBidOMSDKPrivacy.bundle")])
     ]
 )
